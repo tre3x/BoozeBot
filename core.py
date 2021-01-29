@@ -19,10 +19,3 @@ def booze(tag, low, high):
             output.append(pricetag)
     if(len(output) > 0): output.pop(-1)
     return output
-'''
-tag = input("Enter your wonder : ")
-output = booze(tag)
-if(len(output) > 0): output.pop(-1)
-for i in output:
-    print(i)
-'''

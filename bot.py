@@ -16,7 +16,7 @@ async def on_message(message):
         if(len(drinks) == 0): await message.channel.send("Beep.Boop. No drinks found! 🥺")
         else:
             for drink in drinks: 
-                await message.channel.send(drink[0] + " --- " + drink[1])
+                await message.channel.send("```CSS\n"+drink[0] + " --> " + drink[1]+"\n```")
             await message.channel.send("Happy Drinking! 🍻")
 
     if message.content.startswith('$rngdrink'):
@@ -28,7 +28,7 @@ async def on_message(message):
         if(len(drinks) == 0): await message.channel.send("Beep.Boop. No drinks found! 🥺")
         else:
             for drink in drinks: 
-                await message.channel.send(drink[0] + " --- " + drink[1])
+                await message.channel.send("```CSS\n"+drink[0] + " --> " + drink[1]+"\n```")
             await message.channel.send("Happy Drinking! 🍻")
 
 client.run('ODA0NTkwMDczNjAwNjcxNzU0.YBOi5g.3RV2cQVcSRCo8OXMmPuFhy_VPss')
