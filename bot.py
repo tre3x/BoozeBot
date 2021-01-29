@@ -1,7 +1,7 @@
 import discord
 from core import booze
 client = discord.Client()
-
+client.user.setActivity("$help"); 
 @client.event
 async def on_ready():
     print("We have logged in as {0.user}".format(client))
