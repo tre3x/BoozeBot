@@ -32,6 +32,6 @@ async def on_message(message):
             await message.channel.send("Happy Drinking! 🍻")
 
     if message.content.startswith('$help'):
-        await message.channel.send("```\n For getting Price of a specific catagory or a specific drink \n write   $drink <Drink Name> \n\n For getting Price of a specific catagory or a specific drink within a specific price range \n write  $drink <Lower Price Limit> <Higher Price Limit> <Drink Name> \n```")
+        await message.channel.send("```\n For getting Price of a specific catagory or a specific drink \n write   $drink <Drink Name> \n\n For getting Price of a specific catagory or a specific drink within a specific price range \n write  $rngdrink <Lower Price Limit> <Higher Price Limit> <Drink Name> \n```")
 
 client.run('ODA0NTkwMDczNjAwNjcxNzU0.YBOi5g.3RV2cQVcSRCo8OXMmPuFhy_VPss')
