@@ -17,7 +17,7 @@ async def on_message(message):
         else:
             for drink in drinks: 
                 await message.channel.send("```CSS\n"+drink[0] + " --> " + drink[1]+"\n```")
-            await message.channel.send("Happy Drinking! 🍻")
+            await message.channel.send("Happy Drinking @{0.author.mention}! 🍻")
 
     if message.content.startswith('$rngdrink'):
         text = message.content[9:].split()
@@ -29,7 +29,8 @@ async def on_message(message):
         else:
             for drink in drinks: 
                 await message.channel.send("```CSS\n"+drink[0] + " --> " + drink[1]+"\n```")
-            await message.channel.send("Happy Drinking! 🍻")
+            await message.channel.send("Happy Drinking @{0.author.mention}! 🍻")
+            
 
     if message.content.startswith('$help'):
         await message.channel.send("```\n For getting Price of a specific catagory or a specific drink \n write   $drink <Drink Name> \n\n For getting Price of a specific catagory or a specific drink within a specific price range \n write  $rngdrink <Lower Price Limit> <Higher Price Limit> <Drink Name> \n```")
