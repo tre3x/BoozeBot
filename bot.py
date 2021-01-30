@@ -17,7 +17,7 @@ async def on_message(message):
         else:
             for drink in drinks: 
                 await message.channel.send("```CSS\n"+drink[0] + " --> " + drink[1]+"\n```")
-            await message.channel.send("Happy Drinking @{0.author.mention}! 🍻".format(message))
+            await message.channel.send("Happy Drinking {0.author.mention}! 🍻".format(message))
 
     if message.content.startswith('$rngdrink'):
         text = message.content[9:].split()
@@ -29,7 +29,7 @@ async def on_message(message):
         else:
             for drink in drinks: 
                 await message.channel.send("```CSS\n"+drink[0] + " --> " + drink[1]+"\n```")
-            await message.channel.send("Happy Drinking @{0.author.mention}! 🍻".format(message))
+            await message.channel.send("Happy Drinking {0.author.mention}! 🍻".format(message))
             
 
     if message.content.startswith('$help'):
