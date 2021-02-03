@@ -14,7 +14,7 @@ async def on_message(message):
         drink = message.content[6:]
         drinks = booze(drink, 0, 0)
         if(len(drinks) == 0): 
-            await message.add_reaction("👎")
+            #await message.add_reaction("👎")
             await message.channel.send("Beep.Boop. No drinks found! 🥺")
         else:
             for drink in drinks: 
