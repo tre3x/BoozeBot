@@ -13,8 +13,8 @@ async def on_message(message):
     if message.content.startswith('$drink'):
         drink = message.content[6:]
         drinks = booze(drink, 0, 0)
+        await message.add_reaction("🍺 ")
         if(len(drinks) == 0): 
-            #await message.add_reaction("👎")
             await message.channel.send("Beep.Boop. No drinks found! 🥺")
         else:
             for drink in drinks: 
