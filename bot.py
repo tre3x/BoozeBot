@@ -27,8 +27,11 @@ async def on_message(message):
         high = text[1]
         drink = " ".join(text[2:])
         drinks = booze(drink, low, high)
-        if(len(drinks) == 0): await message.channel.send("Beep.Boop. No drinks found! 🥺")
+        if(len(drinks) == 0):
+            await message.add_reaction("👎")
+            await message.channel.send("Beep.Boop. No drinks found! 🥺")
         else:
+            await message.add_reaction("👍")
             for drink in drinks: 
                 await message.channel.send("```CSS\n"+drink[0] + " --> " + drink[1]+"\n```")
             await message.channel.send("Happy Drinking {0.author.mention}! 🍻".format(message))
