@@ -7,5 +7,5 @@ To use this bot in your server : discord.com/oauth2/authorize?client_id=80459007
 
 For Running this code on your machine:
 1. Create a new discord application on  discord.com/developers
-2. Get the token and paste it in *<Your Token>* in **core.py**
+2. Get the token and paste it in *Your Token* in **core.py**
 3. Run **bot.py**
