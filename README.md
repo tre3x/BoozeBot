@@ -1,7 +1,7 @@
 # BOOZEBOT   
 
 
-A python Bot which takes commands starting with *$drink* or *$drinkrng* and return the price of the desired drink. 
+A python Bot which takes commands starting with *$drink* or *$rngdrink* and return the price of the desired drink. 
 
 To use this bot in your server : https://discord.com/oauth2/authorize?client_id=804590073600671754&scope=bot
 
